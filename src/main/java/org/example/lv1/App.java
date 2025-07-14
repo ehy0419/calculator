@@ -32,19 +32,22 @@ public class App {
             case '+':
                 System.out.println(num1 + num2);
                 break;
-                case '-':
-                    System.out.println(num1 - num2);
-                    break;
-                    case '*':
-                        System.out.println(num1 * num2);
-                        break;
-                        case '/':
-                            System.out.println(num1 / num2);
+            case '-':    // 코드 서식 다시 지정 컨트롤+알트+L
+                System.out.println(num1 - num2);
+                break;
+            case '*':
+                System.out.println(num1 * num2);
+                break;
+            case '/':
+                if (num2 == 0) {
+                    System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
+                    }
+                System.out.println(num1 / num2);
+                break; // if 조건문에 입력 예외 사항 추가
+            default:
         }
 
-        // 연산 진행 후 결과값 출력
-        int result = 0;
-        /* 제어문을 활용하여 위 요구사항을 만족할 수 있게 구현합니다.*/
+        // 결과값 출력
         System.out.println("결과: " + result);
     }
 }
