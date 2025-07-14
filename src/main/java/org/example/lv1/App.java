@@ -8,14 +8,14 @@ public class App {
         Scanner scn = new Scanner(System.in);
 
         // 양의 정수 입출력
-        System.out.println("첫 번째 숫자를 입력하세요: ");
+        System.out.print("첫 번째 숫자를 입력하세요: ");
         // Scanner를 사용하여 양의 정수를 입력받고 적합한 타입의 변수에 저장합니다.
         int num1 = scn.nextInt();
         if (num1 < 0) {
             System.out.println("0 이상 양의 정수를 입력하세요");
         }
 
-        System.out.println("두 번째 숫자를 입력하세요: ");
+        System.out.print("두 번째 숫자를 입력하세요: ");
         // Scanner를 사용하여 양의 정수를 입력받고 적합한 타입의 변수에 저장합니다.
         int num2 = scn.nextInt();
         if (num2 < 0) {
