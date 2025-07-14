@@ -5,27 +5,18 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
 
-        Scanner scn = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        // 양의 정수 입출력
+        // 양의 정수 입출력(0 포함)
         System.out.print("첫 번째 숫자를 입력하세요: ");
-        // Scanner를 사용하여 양의 정수를 입력받고 적합한 타입의 변수에 저장합니다.
-        int num1 = scn.nextInt();
-        if (num1 < 0) {
-            System.out.println("0 이상 양의 정수를 입력하세요");
-        }
+        int num1 = scanner.nextInt();
 
         System.out.print("두 번째 숫자를 입력하세요: ");
-        // Scanner를 사용하여 양의 정수를 입력받고 적합한 타입의 변수에 저장합니다.
-        int num2 = scn.nextInt();
-        if (num2 < 0) {
-            System.out.println("0 이상 양의 정수를 입력하세요");
-        }
+        int num2 = scanner.nextInt();
 
         // 사칙연산 기호 입력
         System.out.print("사칙연산 기호를 입력하세요(+,-,*,/): ");
-        // 사칙연산 기호를 적합한 타입으로 선언한 변수에 저장합니다.
-        char opr = scn.next().charAt(0);
+        char opr = scanner.next().charAt(0);
 
         int result = 0;  // result 연산에 맞는 int 선언 추가
 
