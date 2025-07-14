@@ -27,6 +27,21 @@ public class App {
         // 사칙연산 기호를 적합한 타입으로 선언한 변수에 저장합니다.
         char opr = scn.next().charAt(0);
 
+        // switch 조건문 사칙연산
+        switch (opr) {
+            case '+':
+                System.out.println(num1 + num2);
+                break;
+                case '-':
+                    System.out.println(num1 - num2);
+                    break;
+                    case '*':
+                        System.out.println(num1 * num2);
+                        break;
+                        case '/':
+                            System.out.println(num1 / num2);
+        }
+
         // 연산 진행 후 결과값 출력
         int result = 0;
         /* 제어문을 활용하여 위 요구사항을 만족할 수 있게 구현합니다.*/
