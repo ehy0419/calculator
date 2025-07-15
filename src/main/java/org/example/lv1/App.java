@@ -40,9 +40,7 @@ public class App {
                     } else {
                         result = num1 / num2;
                     }
-//                if (num2 != 0) {    // 비교연산자 i= 를 사용해서 num2에 0이 들어올 때 false 값으로 해서 연산
-//                    result = num1 / num2;  // 오류에 먼저 계산하지 않기.
-//                }
+
                     break; // if 조건문에 입력 예외 사항 추가
 
                 default:
@@ -55,9 +53,10 @@ public class App {
             // 계산 종료 시퀀스
             System.out.println("더 계산하시겠습니까? (exit를 입력하면 계산은 끝)");
             String answer = scanner.next();
-            if (answer.equals("exit"))
+            if (answer.equals("exit")) {
                 System.out.println("계산기를 종료합니다.");
                 break;
+            }
         }
     }
 }
