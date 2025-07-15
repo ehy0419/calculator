@@ -5,8 +5,7 @@ public class Calculator {
 
 
         // 사칙연산
-        int result = 0;
-
+        int result;  // int result = 0; 초기화하지 않는 걸로 하면
 
         switch (arithmetic) {
             case '+':
@@ -30,5 +29,7 @@ public class Calculator {
                 System.out.println("올바른 연산 기호를 입력하세요.");
                 return null;
         }
+
+        return result; // 결과 리턴
     }
 }
