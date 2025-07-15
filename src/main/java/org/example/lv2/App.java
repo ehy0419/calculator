@@ -32,9 +32,10 @@ public class App {
             // 계산 종료 시퀀스
             System.out.println("더 계산하시겠습니까? (exit를 입력하면 계산은 끝)");
             String answer = scanner.next();
-            if (answer.equals("exit"))
+            if (answer.equals("exit")) {
                 System.out.println("계산기를 종료합니다.");
-            break;
+                break;
+            }
         }
     }
 }
